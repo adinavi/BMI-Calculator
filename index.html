@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="icon" type="image/png" href="../img/close-medical-measurement-checkup-sphygmomanometer.jpg">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="cont">
+        <h1>BMI Calculator</h1>
+    
+    <!-- Forms -->
+        <div class="forms">
+            <!-- inputs for weight -->
+        <label for="weight">Weight</label>
+        <div class="container">
+            <input type="number" name="weightinputkg" id="weightinputkg" placeholder="Enter weight in kg">
+            <input type="number" name="weightinputpd" id="weightinputpd" placeholder="Enter weight in pounds">
+
+            <select name="weight" id="weight">
+                <option value="kg">kg</option>
+                <option value="pound">pounds</option>
+            </select>
+        </div>
+
+        <!-- inputs for height -->
+        <label for="height">Height</label>
+        <div class="container">
+            <input type="number" name="heightinputmt" id="heightinputmt" placeholder="Enter height in meters">
+            <input type="number" name="heightinputcm" id="heightinputcm" placeholder="Centimeters">
+            <input type="number" name="heightinputft" id="heightinputft" placeholder="feet">
+            <input type="number" name="heightinputin" id="heightinputin" placeholder="inch">
+
+
+            <select name="height" id="height">
+                <option value="meter">Meter</option>
+                <option value="centimeter">Centimeter</option>
+                <option value="feet">Feet</option>
+            </select>
+        </div>
+        <button onclick="Calculate()" >Calculate</button>
+
+        </div>
+        <div class="results">
+            <h2>Your BMI is: -</h2>
+            <p class="status">You need to -</p>
+
+            <div class="measurements">
+                <p>Underweight = &gt; 18.5</p>
+                <p>Normal Weight = 18.5 - 24.9</p>
+                <p>Overweight = 25 - 29.9 </p>
+                <p>Obesity = BMI of 30 or greater</p>
+            </div>
+            <button onclick="window.location.reload()">Try Again</button>
+        </div>
+    </div>
+    
+
+    <script src="../javaScript/script.js"></script>
+</body>
+</html>
