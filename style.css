@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+:root{
+    --color1:rgb(219, 219, 45);
+    --color2:grey;
+    --color3:rgb(124, 120, 120);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--color1);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+}
+.cont{
+    height: 400px;
+    width: 400px;
+    background-color: var(--color2);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.cont h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 40px;
+    color: var(--color1);
+}
+input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--color1);
+    border-radius: 5px 0px 0px 5px;
+    -webkit-border-radius: 5px 0px 0px 5px;
+    -moz-border-radius: 5px 0px 0px 5px;
+    -ms-border-radius: 5px 0px 0px 5px;
+    -o-border-radius: 5px 0px 0px 5px;
+    padding: 0px 10px;
+    /* margin-bottom: 10px; */
+}
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+}
+select{
+    width: 100px;
+    height: 40px;
+    border: 1px solid var(--color1);
+    border-radius: 0px 5px 5px 0px;
+    -webkit-border-radius: 0px 5px 5px 0px;
+    -moz-border-radius: 0px 5px 5px 0px;
+    -ms-border-radius: 0px 5px 5px 0px;
+    -o-border-radius: 0px 5px 5px 0px;
+    background-color: var(--color1);
+    font-weight: bold;
+    color: var(--color2);
+    cursor: pointer;
+}
+select:hover{
+    background-color: var(--color2);
+    color: var(--color1);
+    cursor: pointer;
+}
+input:focus
+select:focus{
+    outline: 2px solid var(--color1);
+}
+select option{
+    color: var(--color1);
+    font-weight: bold;
+}
+.forms button{
+    width: 100%;
+    height: 40px;
+    background-color:var(--color1);
+    margin-top: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.forms button:hover{
+    /* background: linear-gradient(to right, rgb(64, 64, 206) 50%, grey 70%); */
+    background: radial-gradient(circle at center, rgb(219, 219, 45) 0%, grey 100%);
+}
+
+#weightinputpd{
+    display: none;
+}
+#heightinputcm{
+    display: none;
+}
+#heightinputft{
+    display: none;
+}
+#heightinputin{
+    display: none;
+}
+label{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--color1);
+    width: 100%;
+    text-align: left;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.forms{
+    width: 100%;
+    /* display: none; */
+}
+.results{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color1);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 20px;
+    display: none;
+}
+.results h2{
+    font-size: 2rem;
+    margin-bottom: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: var(--color2);
+    font-weight: bold;
+}
+.status{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-family:'Roboto Condensed', sans-serif;
+    color: var(--color3);
+    font-weight: bold;
+}
+.measurements{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family:'Roboto Condensed', sans-serif;
+    color: var(--color3);
+}
+.measurements p{
+    margin-bottom: 5px;
+    color: var(--color3);
+}
+.results button{
+    width: 100%;
+    height: 40px;
+    background-color:var(--color2);
+    margin-top: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.results button:hover{
+    background: radial-gradient(circle at center, rgb(219, 219, 45) 0%, grey 100%);
+}
